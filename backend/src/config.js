@@ -7,7 +7,7 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "NUT HEADS COMMUNITY";
+const namePrefix = "NH_COMMUNITY";
 const description = "NUTTY CHARACTERS";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
@@ -42,7 +42,7 @@ const format = {
 };
 
 const extraMetadata = {
-  external_url: "https://t.co/r7VnA1fe64", // Replace with your website or remove this line if you do not have one.
+  external_url: "https://nutheadsminting.netlify.app/", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
@@ -50,16 +50,16 @@ const extraMetadata = {
 // ** REQUIRED **
 const AUTH = process.env.NFTPORT_API_KEY; // Set this in the .env file to prevent exposing your API key when pushing to Github
 const LIMIT = 2; // Your API key rate limit
-const CHAIN = 'rinkeby'; // only rinkeby, polygon, or ethereum
+const CHAIN = 'polygon'; // only rinkeby, polygon, or ethereum
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
-const CONTRACT_NAME = 'NUT HEADS COMMUNITY';
+const CONTRACT_NAME = 'NH_COMMUNITY';
 const CONTRACT_SYMBOL = 'NHC';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0xF4273496e59C65111701C2677de8A3137f2d2491';
 const TREASURY_ADDRESS = '0xF4273496e59C65111701C2677de8A3137f2d2491';
 const MAX_SUPPLY = "5000"; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
-const MINT_PRICE = "0.001"; // Minting price per NFT. Rinkeby = ETH, Ethereum = ETH, Polygon = MATIC. CANNOT BE UPDATED!
+const MINT_PRICE = "20"; // Minting price per NFT. Rinkeby = ETH, Ethereum = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = "10"; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
@@ -74,7 +74,7 @@ const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the
 const PRESALE_WHITELISTED_ADDRESSES = ["0xF4273496e59C65111701C2677de8A3137f2d2491","0xDB9A9Cf5A35F19BB10C1A2c0a1ecB90B1cbb6598"]; // only update if you want to manually set the whitelisted addresses
 
 // ** OPTIONAL **
-let CONTRACT_ADDRESS = "0xa3B6D328B58031dF22ACCD59382b0f04161BA10f"; // If you want to manually include it
+let CONTRACT_ADDRESS = "0x53eAc45860c63aaF7F5A814096110B3E0811aE91"; // If you want to manually include it
 
 // Generic Metadata is optional if you want to reveal your NFTs
 const GENERIC = true; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
